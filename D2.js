@@ -112,10 +112,10 @@ alert(x+" non è un numero")
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
 
 let val = 7;
-if (val < 10) {
-  console.log("Meno di 10");
-} else if (val < 5) {
+if (val < 5) {
   console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
 }
@@ -145,15 +145,18 @@ console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-
+me.skills.pop();
+console.log(me);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let arr1 = [];
+arr1.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(arr1);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+arr1[9] = 100;
+console.log(arr1);
