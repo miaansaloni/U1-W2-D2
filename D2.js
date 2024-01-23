@@ -105,8 +105,12 @@ alert(x+" non è un numero")
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+const numA = 7;
+if (numA % 2 === 0) {
+  console.log(numA + " è pari");
+} else {
+  console.log(numA + " è dispari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
