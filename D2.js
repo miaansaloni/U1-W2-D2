@@ -2,8 +2,8 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-const num1 = 30;
-const num2 = 57;
+let num1 = 30;
+let num2 = 57;
 
 if (num1 > num2) {
   console.log(num1 + " è maggiore di " + num2);
@@ -17,21 +17,17 @@ if (num1 > num2) {
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-const num3 = 8;
+let num3 = 8;
 
 if (num3 !== 5) {
   console.log(num3 + " is not equal to 5");
-} else if (num3 === 5) {
-  console.log(num3 + " is equal to 5");
-} else {
-  console.log(num3 + " is not valid");
 }
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-const num4 = 10;
+let num4 = 10;
 
 if (num4 % 5 === 0) {
   console.log(num4 + " è perfettamente divisibile per 5");
@@ -43,8 +39,8 @@ if (num4 % 5 === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-const numInt1 = 9;
-const numInt2 = 1;
+let numInt1 = 9;
+let numInt2 = 1;
 
 if (numInt1 === 8 || numInt1 + numInt2 === 8 || numInt1 - numInt2 === 8 || numInt2 - numInt1 === 8) {
   console.log("Fantastico! Il valore è 8!");
@@ -56,21 +52,13 @@ if (numInt1 === 8 || numInt1 + numInt2 === 8 || numInt1 - numInt2 === 8 || numIn
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-const shelf = 15;
-const floralPillow = 8;
-const candle = 5;
-const mug = 3;
-const cuttingBoard = 9;
-const whiteTowel = 4;
-
-const totalShoppingCart = shelf * 2 + floralPillow * 3 + candle + mug * 6 + cuttingBoard + whiteTowel * 3;
-//const totalShoppingCart = mug + candle + shelf;
+let totalShoppingCart = 67;
 
 if (totalShoppingCart > 50) {
-  console.log("Hai diritto alla spedizione gratuita!");
+  console.log("Hai diritto alla spedizione gratuita! Il totale da pagare è " + totalShoppingCart + " euro.");
 } else if (totalShoppingCart <= 50) {
   console.log(
-    "La spedizione ha un costo fisso di 10 euro. Il tuo totale ammonta a " + (totalShoppingCart + 10) + " euro"
+    "La spedizione ha un costo fisso di 10 euro. Il tuo totale ammonta a " + (totalShoppingCart + 10) + " euro."
   );
 }
 
@@ -78,6 +66,24 @@ if (totalShoppingCart > 50) {
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
+
+let ShoppingCart = 43;
+let blkFrDisc = (ShoppingCart / 100) * 20;
+let totalShoppingCart1 = blkFrDisc;
+
+if (totalShoppingCart1 > 50) {
+  console.log(
+    "È stato applicato uno sconto del 20% sul totale! Inoltre hai diritto alla spedizione gratuita! Il tuo totale da pagare è " +
+      totalShoppingCart1 +
+      " euro."
+  );
+} else if (totalShoppingCart1 <= 50) {
+  console.log(
+    "È stato applicato uno sconto del 20% sul totale! La spedizione ha un costo fisso di 10 euro. Il tuo totale ammonta a " +
+      (totalShoppingCart1 + 10) +
+      " euro."
+  );
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -89,31 +95,22 @@ const chickens = 16;
 const cows = 8;
 const sheeps = 23;
 
-/*if(chickens>cows && cows>sheeps){
-  console.log(chickens, cows, sheeps)
-}else if(cows>chickens && chickens> sheeps){
-  console.log(cows, chickens, sheeps)
-}else if(sheeps>chickens && chickens>cows){
-  console.log(sheeps, chickens, cows)
-}
-else{
-  console.log()
-}*/
-
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/*const x = ;
+const x = 6;
 
-if(x===(typeof === number)){
-  console.log(x + " è un numero")
-}*/
+if (typeof x === "number") {
+  console.log(x + " è un numero");
+} else {
+  console.log(x + " non è un numero");
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
-const numA = 7;
+let numA = 7;
 if (numA % 2 === 0) {
   console.log(numA + " è pari");
 } else {
