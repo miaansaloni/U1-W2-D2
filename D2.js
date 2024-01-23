@@ -49,7 +49,7 @@ const numInt2 = 1;
 
 if (numInt1 === 8 || numInt1 + numInt2 === 8 || numInt1 - numInt2 === 8 || numInt2 - numInt1 === 8) {
   console.log("Fantastico! Il valore è 8!");
-} else "Peccato niente 8...";
+} else "Peccato, niente 8...";
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -132,19 +132,19 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
