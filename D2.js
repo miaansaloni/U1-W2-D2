@@ -9,9 +9,8 @@ if (num1 > num2) {
   console.log(num1 + " è maggiore di " + num2);
 } else if (num1 < num2) {
   console.log(num1 + " è minore di " + num2);
-} else if (num1 === num2) {
-  console.log(num2 + " è uguale a " + num1);
 } else {
+  console.log(num2 + " è uguale a " + num1);
 }
 
 /* ESERCIZIO 2
@@ -90,16 +89,25 @@ const chickens = 16;
 const cows = 8;
 const sheeps = 23;
 
+/*if(chickens>cows && cows>sheeps){
+  console.log(chickens, cows, sheeps)
+}else if(cows>chickens && chickens> sheeps){
+  console.log(cows, chickens, sheeps)
+}else if(sheeps>chickens && chickens>cows){
+  console.log(sheeps, chickens, cows)
+}
+else{
+  console.log()
+}*/
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/*const x = s
+/*const x = ;
 
-if (x===(typeof === number)){
-  alert (x + " è un numero")
-}else if (x!==(typeof===number)){
-alert(x+" non è un numero")
+if(x===(typeof === number)){
+  console.log(x + " è un numero")
 }*/
 
 /* ESERCIZIO 9
@@ -123,8 +131,6 @@ if (val < 5) {
 } else {
   console.log("Uguale a 10 o maggiore");
 }
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
