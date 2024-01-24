@@ -165,5 +165,5 @@ console.log(arr1);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-arr1[9] = 100;
+arr1.splice(9, 1, 100);
 console.log(arr1);
